@@ -1,0 +1,5 @@
+{
+  "require": {
+    "portatext/php-sdk": "1.*"
+  }
+}
