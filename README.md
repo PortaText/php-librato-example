@@ -3,8 +3,7 @@
 This is a PHP example of using the [PortaText PHP SDK](https://github.com/PortaText/php-sdk) to receive
 [Librato](http://www.librato.com/) alerts and send SMS instead.
 
-For this to work you should setup a [Custom Webhook Integration](http://support.metrics.librato.com/knowledgebase/articles/36119-custom-service-integrations-webhook) in your Librato account.
-
+For more information see [this blog post](http://blog.portatext.com/2016/01/27/sending-librato-alerts-as-sms-with-group-messaging/).
 
 # License
 The source code is released under Apache 2 License.
