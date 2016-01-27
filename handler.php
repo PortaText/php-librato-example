@@ -2,7 +2,7 @@
 
 /* Configurable section STARTS */
 $from = '14445556666';
-$targets = array('12223334444', '13334445555');
+$contactLists = array(1, 2, 3);
 $apiKey = 'apikey';
 /* Configurable section ENDS */
 
@@ -59,16 +59,13 @@ $text = "Librato alert: $alertName ($alertDescription) $alertConditions for $ale
 /* Send the message! :) */
 $portatext = new Client();
 try {
-  foreach($targets as $to) {
-    $portatext
-      ->setApiKey($apiKey)
-      ->sms()
-      //->toContactLists(array(3))
-      ->to($to)
-      ->text($text)
-      ->from($from)
-      ->post();
-  }
+  $portatext
+    ->setApiKey($apiKey)
+    ->sms()
+    ->toContactLists($contactLists)
+    ->text($text)
+    ->from($from)
+    ->post();
   header("HTTP/1.1 200 OK");
   echo('{"result": "ok"}');
 } catch(\Exception $e) {
