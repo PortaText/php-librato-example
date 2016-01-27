@@ -8,4 +8,4 @@ For more information see [this blog post](http://blog.portatext.com/2016/01/27/s
 # License
 The source code is released under Apache 2 License.
 
-Check [LICENSE](https://github.com/PortaText/php-sdk/blob/master/LICENSE) file for more information.
+Check [LICENSE](https://github.com/PortaText/php-librato-example/blob/master/LICENSE) file for more information.
